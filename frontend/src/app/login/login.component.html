@@ -1,0 +1,22 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+            <mat-toolbar class="black">Login Page</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login"
+        [formGroup]="angularForm" (ngSubmit)="onSubmit(angularForm.value)">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="Password" formControlName="password">
+            </mat-form-field>
+            <button mat-raised-button class="black" type="submit" id = "login" [disabled]="!angularForm.valid">Sign In</button>
+            <br>
+<!--             button with method for redirection-->
+            <button mat-raised-button class="black"  (click)="btnClick('register')" [disabled]="angularForm.valid">Not a user? Sign Up!</button>
+        </form>
+    </mat-card>
+</div>
+
