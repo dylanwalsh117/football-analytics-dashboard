@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {Overlay, OverlayModule} from '@angular/cdk/overlay';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 import {DebugElement} from '@angular/core';
 
 class MockUserService extends UserService{

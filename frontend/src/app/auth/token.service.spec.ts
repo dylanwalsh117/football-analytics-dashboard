@@ -3,7 +3,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import {TokenService} from './token.service';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {BackendInterceptor} from './mock_api';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 
 describe('TokenService', () => {
     let injector: TestBed;

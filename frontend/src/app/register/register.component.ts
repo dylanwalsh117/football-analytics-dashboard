@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
      */
     onSubmit(user): void {
         console.log(user);
-        console.log(this.userService.addUser(user));
+        console.log(this.userService.addUser(user).subscribe());
         this.router.navigate(['/login']);
     }
 

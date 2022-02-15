@@ -6,7 +6,7 @@ import {
 import { TokenService } from './token.service';
 import { TokenInterceptor} from './token.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 
 /**
  * Class for testing interceptor

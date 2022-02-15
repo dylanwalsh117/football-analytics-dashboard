@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 import {TokenService} from '../auth/token.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {getToken} from 'codelyzer/angular/styles/cssLexer';

@@ -7,7 +7,7 @@ import {RouterTestingModule} from '@angular/router/testing';
 import {TokenService} from './token.service';
 import {AppModule} from '../app.module';
 import {Router} from '@angular/router';
-import {UserService} from '../user.service';
+import {UserService} from '../user/user.service';
 
 describe('AuthGuard', () => {
     let tokenService: TokenService;
