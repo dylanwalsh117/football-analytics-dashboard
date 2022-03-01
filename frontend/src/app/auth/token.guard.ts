@@ -5,7 +5,7 @@ import {TokenService} from './token.service';
 
 /**
  * Class for checking if a user is authenticated or not.
- * If a user is not logged in this will prevent access to home page.
+ * If a user is not logged in this will prevent access to dashboard page.
  */
 
 @Injectable()

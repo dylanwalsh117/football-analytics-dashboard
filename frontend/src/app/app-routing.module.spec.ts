@@ -1,7 +1,7 @@
 import {ComponentFixture, fakeAsync, TestBed, tick, waitForAsync} from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {Router, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 import {LoginComponent} from './login/login.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {routes} from './app-routing.module';
@@ -24,7 +24,7 @@ describe('Router: App', () => {
         TestBed.configureTestingModule({
             imports: [RouterTestingModule.withRoutes(routes), HttpClientModule, MatSnackBarModule],
             declarations: [
-                HomeComponent,
+                DashboardComponent,
                 LoginComponent,
                 AppComponent
             ],
@@ -50,9 +50,9 @@ describe('Router: App', () => {
         expect(location.path()).toBe('/login');
         }));
 
-    // Ensuring that if user is not authenticated he can't access /home and will be redirected to /login
-    it('if unauthenticated /home will redirect to /login', fakeAsync(() => {
-        router.navigate(['/home']);
+    // Ensuring that if user is not authenticated he can't access /dashboard and will be redirected to /login
+    it('if unauthenticated /dashboard will redirect to /login', fakeAsync(() => {
+        router.navigate(['/dashboard']);
         tick();
         expect(location.path()).toBe('/login');
     }));

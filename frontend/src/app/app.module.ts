@@ -18,7 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatOptionModule} from '@angular/material/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
@@ -28,13 +28,15 @@ import {TokenGuard} from './auth/token.guard';
 
 
 
+
 @NgModule({
     // Declaring components
     declarations: [
         AppComponent,
         LoginComponent,
-        HomeComponent,
-        RegisterComponent
+        DashboardComponent,
+        RegisterComponent,
+        DashboardComponent
     ],
     imports: [
         // Importing modules

@@ -27,7 +27,7 @@ describe('AuthGuard', () => {
         guard = TestBed.inject(TokenGuard);
     });
 
-    // Ensuring a user who has not been authenticated can't access home page and will redirected to login
+    // Ensuring a user who has not been authenticated can't access dashboard page and will redirected to login
     it('should redirect an unauthenticated user to the login route', () => {
         expect(guard.canActivate()).toEqual(false);
         expect(routerMock.navigate).toHaveBeenCalledWith(['login']);

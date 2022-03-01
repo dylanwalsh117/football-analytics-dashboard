@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
             // if statement to check login
             if (login === true) {
                 localStorage.setItem('token', response.token);
-                this.router.navigateByUrl('/home');
+                this.router.navigateByUrl('/dashboard');
             } else {
                 console.log(response.response);
             }

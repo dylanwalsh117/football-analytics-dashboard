@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {LoginComponent} from './login/login.component';
-import {HomeComponent} from './home/home.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 import {RegisterComponent} from './register/register.component';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -11,7 +11,7 @@ describe('AppComponent', () => {
             declarations: [
                 AppComponent,
                 LoginComponent,
-                HomeComponent,
+                DashboardComponent,
                 RegisterComponent
             ],
         }).compileComponents();
